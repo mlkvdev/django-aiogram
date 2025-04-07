@@ -30,15 +30,25 @@ attrs==25.3.0
     # via aiohttp
 certifi==2025.1.31
     # via aiogram
+click==8.1.8
+    # via uvicorn
 decorator==5.2.1
     # via ipython
 django==5.2
+    # via django-aiogram
+    # via django-phonenumber-field
+    # via django-redis
+django-phonenumber-field==8.0.0
+    # via django-aiogram
+django-redis==5.4.0
     # via django-aiogram
 executing==2.2.0
     # via stack-data
 frozenlist==1.5.0
     # via aiohttp
     # via aiosignal
+h11==0.14.0
+    # via uvicorn
 idna==3.10
     # via yarl
 ipython==9.0.2
@@ -47,6 +57,8 @@ ipython-pygments-lexers==1.1.1
     # via ipython
 jedi==0.19.2
     # via ipython
+loguru==0.7.3
+    # via django-aiogram
 magic-filter==1.0.12
     # via aiogram
 matplotlib-inline==0.1.7
@@ -58,11 +70,18 @@ parso==0.8.4
     # via jedi
 pexpect==4.9.0
     # via ipython
+phonenumbers==9.0.2
+    # via django-aiogram
+    # via django-phonenumber-field
+pillow==10.3.0
+    # via django-aiogram
 prompt-toolkit==3.0.50
     # via ipython
 propcache==0.3.1
     # via aiohttp
     # via yarl
+psycopg2-binary==2.9.9
+    # via django-aiogram
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.3
@@ -76,6 +95,9 @@ pygments==2.19.1
     # via ipython-pygments-lexers
 python-decouple==3.8
     # via django-aiogram
+redis==5.2.1
+    # via django-aiogram
+    # via django-redis
 sqlparse==0.5.3
     # via django
 stack-data==0.6.3
@@ -87,6 +109,8 @@ typing-extensions==4.13.1
     # via aiogram
     # via pydantic
     # via pydantic-core
+uvicorn==0.34.0
+    # via django-aiogram
 wcwidth==0.2.13
     # via prompt-toolkit
 yarl==1.19.0
